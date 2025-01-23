@@ -13,10 +13,10 @@ jobs:
         shell: bash
     
     env:
-      var.subscription_id = "0411661d-786d-4479-8461-8112a276c510"
-      var.client_id       = "38391a70-70d0-42ff-a4d6-a6d89d9a9fdc"
-      var.client_secret   = "pTx8Q~MEzOk5M32p6ihIgVSfK2vgFg7N8QmQybYy"
-      var.tenant_id       = "c01407f9-0318-447d-b0a3-afc95a957f86"
+      ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
+      ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
+      ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
+      ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
 
 
     steps:
