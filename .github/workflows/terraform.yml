@@ -24,11 +24,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4.1.1
 
-  # Install the preferred version of Terraform CLI
-    - name: Setup Terraform
-      uses: hashicorp/setup-terraform@v2.0.3
+      # Step 2: Set up Terraform CLI
+    - name: Set up Terraform
+      uses: hashicorp/setup-terraform@v2
       with:
-          terraform_version: 1.6.6
+        terraform_version: 1.5.7
 
       - name: Terraform Init
         run: terraform init
